@@ -1,0 +1,5 @@
+#includeEtc "caseDicts/postProcessing/numerical/residuals.cfg"
+
+fields (p U k epsilon nut nuTilda);
+
+// ************************************************************************* //
