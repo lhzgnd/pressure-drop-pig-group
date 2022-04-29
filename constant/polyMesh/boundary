@@ -1,0 +1,80 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+7
+(
+    front
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          5276;
+        startFace       1098722;
+    }
+    back
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          5198;
+        startFace       1103998;
+    }
+    upperWall
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          6406;
+        startFace       1109196;
+    }
+    lowerWall
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          6409;
+        startFace       1115602;
+    }
+    outlet
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          500;
+        startFace       1122011;
+    }
+    inlet
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          500;
+        startFace       1122511;
+    }
+    pig
+    {
+        type            wall;
+        inGroups        
+2
+(
+pigGroup
+wall
+)
+;
+        nFaces          25887;
+        startFace       1123011;
+    }
+)
+
+// ************************************************************************* //
